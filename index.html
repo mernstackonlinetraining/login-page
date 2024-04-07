@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+      }
+      body {
+        background-color: rgba(137, 235, 130, 0.936);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background-color: white;
+        width: 60%;
+        padding: 50px;
+      }
+      form > * {
+        border: none;
+      }
+      input {
+        background-color: whitesmoke;
+      }
+      input::placeholder {
+        font-size: 16px;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 15px;
+      }
+      button {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(59, 153, 59);
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+      .create-acnt {
+        color: rgb(128, 231, 128);
+        cursor: pointer;
+      }
+      .not-registered {
+        color: rgb(193, 181, 181);
+      }
+      
+      @media screen and (min-width:700px) {
+       form{
+        width: 35%;
+       }
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <input type="text" placeholder="username" />
+      <br />
+      <br />
+      <input type="password" placeholder="password" />
+      <br />
+      <br />
+      <button>LOGIN</button>
+      <br />
+      <br />
+      <p>
+        <span class="not-registered">Not registered?</span>
+        <span class="create-acnt">Create an account</span>
+      </p>
+    </form>
+  </body>
+</html>
